@@ -1,0 +1,18 @@
+/* Nomor 2 */
+.profile {
+  border: 1px solid #e2e8f0;
+  padding: 16px;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1100ff;
+}
+
+.description {
+  font-size: 14px;
+  color: #0000ff;
+}

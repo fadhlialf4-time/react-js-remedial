@@ -1,0 +1,17 @@
+/* Nomor 3 */
+.button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.default {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+.primary {
+  background-color: #3b82f6;
+  color: white;
+}

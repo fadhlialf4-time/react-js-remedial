@@ -1,0 +1,19 @@
+/* Nomor 4 */
+.alert {
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.success {
+  background-color: #22c55e;
+}
+
+.warning {
+  background-color: #f59e0b;
+}
+
+.error {
+  background-color: #ef4444;
+}
