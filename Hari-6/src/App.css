@@ -1,0 +1,92 @@
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+button {
+  background-color: white;
+  color: red;
+  border: 2px;
+  cursor: pointer;
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  background: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-color {
+  color: white;
+}
+
+.todo-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.todo-wrapper {
+  width: 100%;
+  max-width: 500px;
+  background: red;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgb(255, 0, 0);
+}
+
+.filters {
+  margin: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filters button {
+  background-color: white;
+  color: red;
+}
+
+.filters button.aktif {
+  background-color: black;
+  color: white;
+}
+
+.empty {
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .todo-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
