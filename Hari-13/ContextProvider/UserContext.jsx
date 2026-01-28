@@ -1,0 +1,30 @@
+// Nomor 1
+import { createContext, useState } from "react";
+
+export const UserContext = createContext(null);
+
+export function UserProvider({ children }) {
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    isLoggedIn: false,
+  });
+
+  const login = (name, email) => {
+    setUser({ name, email, isLoggedIn: true });
+  };
+
+  const logout = () => {
+    setUser({ name: "", email: "", isLoggedIn: false });
+  };
+
+  const updateProfile = (newData) => {
+    setUser((prev) => ({ ...prev, ...newData }));
+  };
+
+  return (
+    <UserContext.Provider value={{ user, login, logout, updateProfile }}>
+      {children}
+    </UserContext.Provider>
+  );
+}
